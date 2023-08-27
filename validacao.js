@@ -14,17 +14,16 @@ function verificaSeOChutePossuiUmValorValido(chute) {
                 document.body.style.backgroundColor = "black";
         } 
         
-        /*else {
-
-            elementoChute.innerHTML += '<div>Valor Inválido</div>';
-        }*/
+        else {
+           elementoChute.innerHTML += '<div>Valor Inválido</div>'
+        }
     }
 
     if(numeroForMaiorOuMenorQueOPermitido(numero)) {
         elementoChute.innerHTML += `
-        <div>Valor Inválido: O número sucreto precisa estar entre ${menorValor} e ${maiorValor}!
-        </div>`
-        
+        <div>Valor Inválido!</div>
+        `
+        return
     }
     if(numero===numeroSecreto) {
         document.body.innerHTML= `
@@ -41,6 +40,7 @@ function verificaSeOChutePossuiUmValorValido(chute) {
         elementoChute.innerHTML += `
         <div>O número secreto é maior <i class="fa-solid fa-up-long"></i>
         </div>`
+
     }
 }
 
