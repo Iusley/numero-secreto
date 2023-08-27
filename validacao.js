@@ -12,10 +12,12 @@ function verificaSeOChutePossuiUmValorValido(chute) {
                 
                 `
                 document.body.style.backgroundColor = "black";
-        } else {
+        } 
+        
+        /*else {
 
             elementoChute.innerHTML += '<div>Valor Inválido</div>';
-        }
+        }*/
     }
 
     if(numeroForMaiorOuMenorQueOPermitido(numero)) {

@@ -19,6 +19,16 @@ body {
     font-family: var(--font-family);
 }
 
+p {
+    margin-bottom: 80px; 
+    font-size: 20px;
+}
+
+.game-over {
+    font-weight: 800;
+    color: black;
+}
+
 h1 {
     font-size: 5em;
 }
@@ -54,3 +64,4 @@ h2 {
     font-weight: 700;
     font-size: 20px;
 }
+
